@@ -162,8 +162,10 @@ footer .text-reset:hover {
 .slider-item {
   position: relative;
   display: inline-block;
+  width: 100%;
 }
 
+/* شريط الحالة */
 .status-tag {
   position: absolute;
   top: 10px;
@@ -175,14 +177,27 @@ footer .text-reset:hover {
   font-size: 14px;
   font-weight: bold;
   z-index: 2;
+  max-width: 90%; /* حتى لا يخرج من الصورة */
+  word-wrap: break-word;
 }
 
+/* الألوان حسب الحالة */
 .status-tag.reserved {
   background-color: rgba(255, 0, 0, 0.8); /* أحمر */
 }
 
 .status-tag.available {
   background-color: rgba(0, 128, 0, 0.8); /* أخضر */
+}
+
+/* تحسين عرض الوسم على الشاشات الصغيرة */
+@media (max-width: 576px) {
+  .status-tag {
+    font-size: 12px;
+    padding: 4px 8px;
+    top: 8px;
+    right: 8px;
+  }
 }
 
 
