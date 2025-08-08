@@ -159,4 +159,30 @@ footer .text-reset {
 footer .text-reset:hover {
   color: #ff6584 !important;
 }
+.slider-item {
+  position: relative;
+  display: inline-block;
+}
+
+.status-tag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(0, 128, 0, 0.8); /* أخضر */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.status-tag.reserved {
+  background-color: rgba(255, 0, 0, 0.8); /* أحمر */
+}
+
+.status-tag.available {
+  background-color: rgba(0, 128, 0, 0.8); /* أخضر */
+}
+
 
