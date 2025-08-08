@@ -200,4 +200,11 @@ footer .text-reset:hover {
   }
 }
 
+.status-tag.pending {
+  background-color: orange; /* اللون اللي يميز "معلق" */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
 
